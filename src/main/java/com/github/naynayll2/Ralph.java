@@ -11,7 +11,8 @@ public class Ralph {
 
     public static void main(String[] args) {
         // Log the bot in
-        String token = "ODk5NjgyNTQ1NTMxMjQ4NjYw.YW2Uqg.F6ZCw-W7amdnrbVIncrQrswofwQ";
+        Scanner input = new Scanner("token.txt");
+        String token = input.nextLine();
         DiscordApi api = new DiscordApiBuilder()
                 .setToken(token)
                 .login().join();
